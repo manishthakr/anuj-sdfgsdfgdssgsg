@@ -529,6 +529,8 @@ a {
 
 
 #p2{
+  font-family: "Lato", sans-serif;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -827,7 +829,9 @@ body:has(.card[data-color="brown"]:hover) {
 
 
 
-
+#p4{
+  font-family: "Lato", sans-serif;
+}
 
 .h-4-p4{
   width: 100%;
@@ -909,14 +913,15 @@ body:has(.card[data-color="brown"]:hover) {
 }
 .p4-p-txt-box{
   width: 40%;
-  height: 50vh;
+  /* height: 70vh; */
   background-color:hsla(249, 5%, 29%, 0.767);
   border-radius: 18px;
   padding: 20px;
 }
 .p4-p-txt-box p{
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
+  color: white;
   
 }
 .p4-p-txt-box p a{
@@ -929,16 +934,19 @@ body:has(.card[data-color="brown"]:hover) {
 }
 .ag-toggle_title {
   line-height: 1.2;
-  margin: 0 0 50px;
+  margin: 0 0 20px;
   overflow-x: hidden;
 
   text-align: center;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 2rem;
   color: #FFF;
 }
 .cd-words-wrapper {
   color: #e5e128;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 
@@ -949,6 +957,7 @@ body:has(.card[data-color="brown"]:hover) {
   justify-content: center;
 }
 #p5 {
+  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1326,5 +1335,21 @@ flex-direction: column;
   
   .card .card-image {
     width: 100%;    
+  }
+  .hovereffect a i {
+    padding: 5px;
+    margin: 0px;
+  
+  }
+  .cd-words-wrapper {
+    color: #e5e128;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .movingtxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
