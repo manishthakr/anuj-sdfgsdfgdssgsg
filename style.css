@@ -96,6 +96,7 @@ header nav a{
 header nav a:hover {
   color: #fbff00;
   transition-delay: 2ms;
+  text-decoration: none;
 }
 header nav button {
   -webkit-appearance: none;
