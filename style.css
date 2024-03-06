@@ -1238,6 +1238,9 @@ textarea::-webkit-scrollbar-track {
   height: 25%;
   top: 10px;
 }
+header nav {
+  width: 70%;
+}
 
 .outer {
   margin: 0px;
