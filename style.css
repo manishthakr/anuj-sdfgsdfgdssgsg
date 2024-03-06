@@ -1187,7 +1187,9 @@ textarea::-webkit-scrollbar-track {
       bottom: 50%;
    
   }
-  
+  .input-box{
+    width: 80%;
+  }
   .p4-img-box img{
     width: 80%;
     /* height: 40vh; */
