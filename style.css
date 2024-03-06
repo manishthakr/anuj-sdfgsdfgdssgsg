@@ -974,9 +974,11 @@ input{
 
 .input-box {
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
   padding: 20px 40px;
   margin: 50px 0px;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 40%;
 }
 
 .input-box h2 {
