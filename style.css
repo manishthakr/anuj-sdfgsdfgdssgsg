@@ -554,7 +554,6 @@ border-radius: 25px;
 .p2-txt-box{
   width: 40%;
   background-color:hsla(249, 5%, 29%, 0.767);
-
   backdrop-filter: blur(5px);
   border-radius: 18px;
   padding: 30px;
@@ -562,11 +561,14 @@ border-radius: 25px;
 }
 .p2-txt-box p{
   font-family: "Lato", sans-serif;
-color: #000000d0;
-  font-size: 20px;
+  color: #ffffffd0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  padding: 30px;
 }
 .p2-txt-box .distxt{
-  text-align: left;
+  text-align: center;
 }
 
 .text {
@@ -961,6 +963,7 @@ body:has(.card[data-color="brown"]:hover) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 input{
   width: 100%;
@@ -1155,6 +1158,94 @@ textarea::-webkit-scrollbar-track {
   text-align: center;
 }
 
+svg {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+footer {
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  filter: url("#goo");
+  font-family: "Lato", sans-serif;
+
+}
+footer h1 {
+  z-index: 2;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: calc(2vmin + 8px);
+}
+footer h1 span {
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 15px rgba(255, 54, 54, 0.4);
+}
+footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 225px;
+  clip-path: url("#wave");
+  background-color: #1a1a1a;
+  backdrop-filter: blur(20px);
+}
+@media only screen and (max-width: 700px) {
+  footer::after {
+    clip-path: none;
+    height: 100px;
+  }
+}
+footer .ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #28323B;
+  position: absolute;
+  animation: up 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+}
+
+@keyframes up {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
+@keyframes up-small {
+  0% {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+  }
+}
 @media screen and (max-width: 1111px){
   #cards {
     margin: 0px;
@@ -1325,7 +1416,9 @@ flex-direction: column;
 
     width: 80%;    
   }
-  
+  footer .ball {
+    animation: up-small 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+  }
 }
 @media(max-width: 600px) {
   #cards {
