@@ -283,7 +283,6 @@ a {
   margin: 0px 0px  0px 100px;
   width: 30%;
   height: 50vh;
-  font-family: sans-serif;
   letter-spacing: 3px;
 }
 
@@ -529,8 +528,6 @@ a {
 
 
 #p2{
-  font-family: "Lato", sans-serif;
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -560,7 +557,6 @@ border-radius: 25px;
   margin-right: 40px;
 }
 .p2-txt-box p{
-  font-family: "Lato", sans-serif;
   color: #ffffffd0;
   font-size: 18px;
   letter-spacing: 1px;
@@ -831,9 +827,7 @@ body:has(.card[data-color="brown"]:hover) {
 
 
 
-#p4{
-  font-family: "Lato", sans-serif;
-}
+
 
 .h-4-p4{
   width: 100%;
@@ -959,7 +953,6 @@ body:has(.card[data-color="brown"]:hover) {
   justify-content: center;
 }
 #p5 {
-  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
